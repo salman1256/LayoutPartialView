@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Display";
+}
+
+<h2>Display</h2>
+@if (TempData["empCount"] == null)
+{
+    <h2>Welcome: You are coming directly !!!</h2>
+}
+else
+{
+    <h2>TempData Says Number of Employee Are: @TempData["empCount"]</h2>
+}
+<h2>Display</h2>
+@if (Session["empCount"] == null)
+{
+    <h2>Session says: no storage</h2>
+}
+else
+{
+    <h2>Session Says Number of Employee Are: @Session["empCount"]</h2>
+}

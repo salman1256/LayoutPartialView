@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/OurStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="topPanel">
+       <h1>Our WebSite</h1>
+          <hr />      
+                    
+                <ul>
+                <li>@Html.ActionLink("Student Home", "Index", "Student")</li>
+                <li>@Html.ActionLink("Student Display", "Display", "Student")</li>
+                <li>@Html.ActionLink("Student Register", "Create", "Student")</li>
+                <li>@Html.ActionLink("Web Home", "Index", "Home")</li></ul>
+                             
+    </div>
+    <div class="mainPanel">
+        @RenderBody()
+    </div>
+    <div class="footer"><p  style="background-color:white; text-align:center;">
+        All Rights Reserved to Students &reg;</p></div>
+</body>
+</html>
